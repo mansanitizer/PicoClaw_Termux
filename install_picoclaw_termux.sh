@@ -45,7 +45,7 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # ---------- Final steps ----------
 section "Run PicoClaw onboarding"
-termux-chroot picoclaw onboard || true
+termux-chroot "$HOME/.local/bin/picoclaw" onboard || true
 
 section "Start PicoClaw gateway — this will stay running"
-termux-chroot picoclaw run
+termux-chroot "$HOME/.local/bin/picoclaw" run
